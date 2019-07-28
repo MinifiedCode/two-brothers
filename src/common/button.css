@@ -1,4 +1,6 @@
 .btn {
-  color: red;
+  border: 2px solid black;
+  height: 30px;
+  margin: 0px 10px;
 }
 /*# sourceMappingURL=button.css.map */
