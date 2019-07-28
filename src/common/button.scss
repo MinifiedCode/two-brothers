@@ -10,7 +10,7 @@
 
   a {
     text-decoration: none;
-    color: lighten($bgColor, 35%);
+    color: $textColor;
     padding: 0px 10px;
 
     &:hover {

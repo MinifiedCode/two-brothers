@@ -1,3 +1,5 @@
+@import './variables';
+
 * {
   margin: 0px 3px;
   padding: 0;
@@ -8,5 +10,6 @@ html, body {
   height: 100%;
   padding-top: 5px;
   font-family: 'Open Sans', sans-serif;
-  background-color: rgb(169, 206, 166);
+  background-color: $bgColor;
+  color: $textColor;
 }
