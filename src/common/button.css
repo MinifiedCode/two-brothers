@@ -7,13 +7,13 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .btn-nav a {
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 0px 10px;
 }
 
