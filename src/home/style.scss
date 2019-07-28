@@ -1,3 +1,7 @@
+@import '../variables';
+
 .content { 
-  margin-left: 10px;
+  padding: 50px;
+  color: $textColor;
+  font-weight: $defaultFontWeight;
 }
