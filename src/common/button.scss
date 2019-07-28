@@ -1,5 +1,4 @@
-$borderColor: rgb(87, 82, 82);
-$bgColor: rgb(169, 206, 166);
+@import '../variables';
 
 .btn-nav {
   border: 2px solid $borderColor;
