@@ -1,6 +1,9 @@
 import React from 'react';
-import Navbar from './navbar'
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import './style.css'
+// import components for routing
+import Navbar from './navbar'
+import About from './about'
 
 function Index() {
   return (
@@ -16,6 +19,7 @@ function App() {
 
         {/* routing */}
         <Route exact path="/" component={Index} />
+        <Route path="/about" component={About} />
       </div>
     </Router>
   );
