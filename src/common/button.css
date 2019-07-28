@@ -1,6 +1,27 @@
-.btn {
-  border: 2px solid black;
-  height: 30px;
+.btn-nav {
+  border: 2px solid #575252;
+  border-radius: 5px;
+  height: 35px;
   margin: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 10px;
+}
+
+.btn-nav a:hover {
+  color: white;
+}
+
+.btn-nav:hover {
+  background-color: #89bc85;
 }
 /*# sourceMappingURL=button.css.map */

@@ -4,12 +4,7 @@ import './style.css'
 // import components for routing
 import Navbar from './navbar'
 import About from './about'
-
-function Index() {
-  return (
-    <h1>Index</h1>
-  )
-}
+import Home from './home'
 
 function App() {
   return (
@@ -18,7 +13,7 @@ function App() {
         <Navbar />
 
         {/* routing */}
-        <Route exact path="/" component={Index} />
+        <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
       </div>
     </Router>

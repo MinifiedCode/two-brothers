@@ -1,5 +1,25 @@
-.btn {
-  border: 2px solid black;
-  height: 30px;
+$borderColor: rgb(87, 82, 82);
+$bgColor: rgb(169, 206, 166);
+
+.btn-nav {
+  border: 2px solid $borderColor;
+  border-radius: 5px;
+  height: 35px;
   margin: 0px 10px;
+  display: flex;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: lighten($bgColor, 35%);
+    padding: 0px 10px;
+
+    &:hover {
+      color: white;
+    }
+  }
+  
+  &:hover {
+    background-color: darken($bgColor, 10%);
+  }
 }
