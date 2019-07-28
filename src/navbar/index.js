@@ -1,17 +1,17 @@
 import React from 'react'
 import './style.css'
-import { Link } from 'react-router-dom'
+import Button from '../common/Button'
 
 const Navbar = () => (
   <div className="nav">
     {/* replace <p> element with <img> element */}
-    <p>Logo here</p>
+    <p id="logo">Logo here</p>
     {/* routes to components */}
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/contact">Contact Us</Link>
-    <Link to="/dashboard">Customer Dashboard</Link>
-    <Link to="/quote">Get a Quote</Link>
+    <Button path="/" text="Home" />
+    <Button path="/about" text="About" />
+    <Button path="/contact" text="Contact Us" />
+    <Button path="/dashboard" text="Customer Dashboard" />
+    <Button path="/quote" text="Get a Quote" />
   </div>
 )
 
