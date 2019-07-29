@@ -10,6 +10,20 @@ a {
   position: relative;
 }
 
+.active-link {
+  -webkit-box-shadow: 0px 2px black;
+          box-shadow: 0px 2px black;
+}
+
+.active-link p {
+  overflow: hidden;
+  margin-top: 3px;
+  line-height: 50px;
+  border-bottom: 3px solid green;
+  -webkit-box-shadow: 1px 3px 0px -1px #caca28;
+          box-shadow: 1px 3px 0px -1px #caca28;
+}
+
 .link {
   height: 100%;
   display: -webkit-box;
