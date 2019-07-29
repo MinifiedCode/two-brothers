@@ -20,6 +20,24 @@
   display: flex;
   position: absolute;
   right: 0;
+
+  @media screen and (max-width: 425px) {
+    visibility: hidden;
+  }
+}
+
+.menu {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  img {
+    margin-top: 20px;
+    width: 50px;
+  }
+  @media screen and (max-width: 425px) {
+    visibility: initial;
+
+  }
 }
 
 #logo {

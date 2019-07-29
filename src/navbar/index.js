@@ -35,6 +35,10 @@ class Navbar extends React.Component {
           <Button active={this.state.activeLink} path="/dashboard" text="Dashboard" type="nav" />
           <Button active={this.state.activeLink} path="/quote" text="Get a Quote" type="nav" />
         </div>
+
+        <div className="menu">
+          <img src="https://img.icons8.com/material-outlined/24/000000/menu.png" alt="Menu"/>
+        </div>
       </div>
     )
   }
