@@ -8,11 +8,13 @@ const Navbar = () => (
     {/* replace <p> element with <img> element */}
     <img id="logo" alt={"Two Brothers Lawn Care"} src={logo} />
     {/* routes to components */}
-    <Button path="/" text="Home" type="nav" />
-    <Button path="/about" text="About" type="nav" />
-    <Button path="/contact" text="Contact Us" type="nav" />
-    <Button path="/dashboard" text="Customer Dashboard" type="nav" />
-    <Button path="/quote" text="Get a Quote" type="nav" />
+    <div className="nav-buttons">
+      <Button path="/" text="Home" type="nav" />
+      <Button path="/about" text="About" type="nav" />
+      <Button path="/contact" text="Contact Us" type="nav" />
+      <Button path="/dashboard" text="Dashboard" type="nav" />
+      <Button path="/quote" text="Get a Quote" type="nav" />
+    </div>
   </div>
 )
 

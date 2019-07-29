@@ -1,24 +1,33 @@
 @import '../variables';
 
-.btn-nav {
-  border: 2px solid $borderColor;
-  border-radius: 5px;
-  height: 35px;
-  margin: 0px 10px;
+.btn {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: $textColor;
+  position: relative;
+}
+
+.link {
+  height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
+}
 
-  a {
-    text-decoration: none;
-    color: $textColor;
-    padding: 0px 10px;
-
-    &:hover {
+.btn-nav {
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 24px;
+  &:hover {
+    background-color: darken($bgColor, 40%);
+    a {
       color: white;
     }
-  }
-  
-  &:hover {
-    background-color: darken($bgColor, 10%);
-  }
+  } 
 }

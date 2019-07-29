@@ -1,18 +1,22 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import './button.css'
 
-export default class Button extends Component {
+class Button extends Component {
+  handleSubmit = e => {
+    e.preventDefault()
+    console.log('submitted')
+  }
+
   render() {
-    let path = this.props.path
-    let text = this.props.text
-    let type = this.props.type
+    const { path, text, type } = this.props
 
     return (
-      <div className={`btn btn-${type}`}>
-        <Link to={path}>{text}</Link>
-      </div>
+      <Link className={`btn btn-${type}`} to={path}>
+        <span className="link">{text}</span>
+      </Link>
     )
   }
 }
@@ -27,3 +31,5 @@ Button.propTypes = {
   path: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired
 }
+
+export default withRouter(Button)
