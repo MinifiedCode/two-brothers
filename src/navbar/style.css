@@ -35,18 +35,19 @@
 .menu {
   visibility: hidden;
   position: absolute;
-  right: 0;
-}
-
-.menu img {
-  margin-top: 20px;
-  width: 50px;
+  right: 20px;
+  top: 35px;
 }
 
 @media screen and (max-width: 425px) {
   .menu {
     visibility: initial;
   }
+}
+
+.menu-container {
+  width: 100%;
+  position: relative;
 }
 
 #logo {
@@ -58,11 +59,52 @@
   max-height: 100%;
 }
 
+@media screen and (max-width: 425px) {
+  #logo {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    padding-left: 0px;
+  }
+}
+
 #company {
   margin-left: auto;
   margin-right: auto;
   font-weight: 700;
   font-size: 35px;
   padding-bottom: 10px;
+}
+
+.menu-closed {
+  visibility: hidden;
+}
+
+.menu-open {
+  visibility: initial;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  right: 55px;
+  border: 2px solid darkgrey;
+  -webkit-box-shadow: 1px 1px black;
+          box-shadow: 1px 1px black;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 200px;
+  z-index: 2;
 }
 /*# sourceMappingURL=style.css.map */

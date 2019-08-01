@@ -23,7 +23,7 @@ export default class About extends Component {
       <div className="about-container">
         <h1><i id="underline">What we're about</i></h1>
         <p>{text}</p>
-        <img id="mower-img" src={mower} />
+        <img alt="Mower" id="mower-img" src={mower} />
         <div id="learn-more">
           <Button path="/about" exact="false" type="info"  text="Learn More" />
         </div>
