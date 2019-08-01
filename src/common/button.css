@@ -51,4 +51,13 @@ a {
 .btn-nav:hover a {
   color: white;
 }
+
+.btn-info .text {
+  border: 0px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100px;
+  background: darkgrey;
+  text-align: center;
+}
 /*# sourceMappingURL=button.css.map */

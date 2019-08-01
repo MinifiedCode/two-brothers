@@ -29,7 +29,11 @@ class Button extends Component {
     const { path, text, type, exact } = this.props
     return (
       <NavLink activeClassName="active-link" className={`btn btn-${type}`} exact={exact} to={path}>
-        <span className="link"><p>{text}</p></span>
+        { 
+          type === "nav" 
+            ? <span className="link"><p>{text}</p></span>
+            : <p className="text">{text}</p>
+        }
       </NavLink>
     )
   }

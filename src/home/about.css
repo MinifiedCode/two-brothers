@@ -1,0 +1,28 @@
+.about-container {
+  height: 50%;
+  background: white;
+  padding: 100px 200px;
+  position: relative;
+}
+
+.about-container p {
+  margin-left: 20px;
+  width: 50%;
+  line-height: 40px;
+}
+
+#underline {
+  text-decoration: underline;
+}
+
+#mower-img {
+  width: 400px;
+  position: absolute;
+  right: 15%;
+  top: 50px;
+}
+
+#learn-more {
+  padding: 10px 50px;
+}
+/*# sourceMappingURL=about.css.map */

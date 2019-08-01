@@ -35,6 +35,10 @@
   }
 }
 
+.home-container {
+  height: 100%;
+}
+
 .container {
   position: relative;
 }
