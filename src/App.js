@@ -17,8 +17,8 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/dashboard" component={Dashboard} />
-      
-        <Footer />
+        
+        <Footer company="Two Brothers Lawn Care" />
       </div>
     </Router>
   );

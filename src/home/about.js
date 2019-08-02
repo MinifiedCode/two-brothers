@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './about.css'
+import './styles/about.css'
 import NavButton from '../common/NavButton'
 
 let text = `
@@ -21,7 +21,7 @@ export default class About extends Component {
     return (
       <div className="about-container">
         <h1><i id="underline">What we're about</i></h1>
-        <p>{text}</p>
+        <p id="text-content">{text}</p>
         <div id="mower-img"></div>
         <div id="learn-more">
           <NavButton path="/about" exact={false} type="info"  text="Learn More" />

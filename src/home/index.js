@@ -1,7 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./styles/style.css";
 import background from "../img/background-2.jpeg";
 import About from './about'
+import Separator from '../common/Separator'
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       </div>
 
       <About />
+
+      <Separator />
     </div>
   );
 }
