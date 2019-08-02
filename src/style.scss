@@ -1,7 +1,7 @@
 @import './variables';
 
 * {
-  margin: 0 auto;
+  margin: 0px 0px;
   padding: 0;
 }
 
@@ -24,4 +24,5 @@ html, body {
 .App { 
   height: 100%;
   width: 100%;
+  position: relative;
 }
