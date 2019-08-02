@@ -36,7 +36,7 @@ class Navbar extends React.Component {
     return(
       <div className="nav">
         {/* replace <p> element with <img> element */}
-        <img id="logo" alt={"Two Brothers Lawn Care"} src={logo} />
+        <div id="logo" />
         {/* routes to components */}
         <div className="nav-buttons">
           <NavButton active={this.state.activeLink} exact={true} path="/" text="Home" type="nav" />

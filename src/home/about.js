@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './about.css'
-import mower from '../img/lawn-mower.jpg'
 import NavButton from '../common/NavButton'
 
 let text = `
@@ -23,7 +22,7 @@ export default class About extends Component {
       <div className="about-container">
         <h1><i id="underline">What we're about</i></h1>
         <p>{text}</p>
-        <img alt="Mower" id="mower-img" src={mower} />
+        <div id="mower-img"></div>
         <div id="learn-more">
           <NavButton path="/about" exact={false} type="info"  text="Learn More" />
         </div>
