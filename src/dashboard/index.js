@@ -20,12 +20,13 @@ const netlifyAuth = {
 class Dashboard extends Component {
   handleClick = e => {
     netlifyAuth.authenticate(() => {
+      console.log('auth')
       netlifyAuth.isAuth = true;
     })
   }
 
   render() {
-    console.log(netlifyAuth.isAuth)
+    console.log(netlifyAuth.user)
     return (
       <div className="dashboard">
         {netlifyAuth.isAuth 
