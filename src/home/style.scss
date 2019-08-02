@@ -10,6 +10,8 @@
   position: absolute;
   top: 0;
   text-shadow: 3px 4px grey;
+
+
 }
 
 .slogan-container {
@@ -31,14 +33,25 @@
   @media screen and (max-width: 1650px) {
     font-size: 22px;
   }
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+    bottom: 50px;
+    font-size: 14px;
+    #motto {
+      font-size: 12px;
+    }
+  }
 }
 
 .home-container {
   height: 100%;
+  width: 100%;
 }
 
 .container  {
   position: relative;
+  width: 100%;
 }
 
 #bg {
@@ -49,4 +62,8 @@
   background-color: black;
   opacity: 0.5;
   overflow: hidden;
+
+  @media screen and (max-width: 425px) {
+    height: 300px;
+  }
 }

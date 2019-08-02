@@ -5,9 +5,28 @@
   position: relative;
   
   p {
-    margin-left: 20px;
+    margin-left: 0px;
     width: 50%;
     line-height: 40px;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+    padding: 25px 50px;
+    position: relative;
+    word-wrap: break-word;
+    h1 {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      font-size: 24px;
+    }
+    p {
+      margin-top: 20px;
+      width: 80%;
+      line-height: 40px;
+      font-size: 12px;
+    }
   }
 }
 
@@ -26,8 +45,21 @@
   right: 15%;
   top: 50px;
   clear: both;
+
+  @media screen and (max-width: 425px) {
+    visibility: hidden;
+    right: 0;
+  }
 }
 
 #learn-more {
   padding: 10px 50px;
+  height: 100px;
+  width: 45%;
+  position: relative;
+
+  @media screen and (max-width: 425px) {
+    width: 30%;
+    position: absolute;
+  }
 }

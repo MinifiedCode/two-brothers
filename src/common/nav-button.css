@@ -56,6 +56,7 @@ a {
   height: 100%;
   font-weight: 700;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .btn-nav:hover {
@@ -66,13 +67,32 @@ a {
   color: white;
 }
 
+.btn-info {
+  position: absolute;
+  left: 20%;
+  width: 120px;
+  height: auto;
+}
+
 .btn-info .text {
   border: 0px solid black;
   border-radius: 5px;
   font-size: 15px;
-  width: 100px;
+  width: 100%;
   background: darkgrey;
   text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .btn-info {
+    width: 50%;
+    margin: auto;
+    position: relative;
+  }
+  .btn-info .text {
+    width: 100%;
+    margin: auto;
+  }
 }
 
 .btn-nav-mobile {
