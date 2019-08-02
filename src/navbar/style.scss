@@ -1,5 +1,22 @@
 @import '../variables';
 
+@mixin menu {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  right: 55px;
+  border: 2px solid darkgrey;
+  box-shadow: 1px 1px black;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 200px;
+  z-index: 2;
+}
+
 .nav {
   margin-top: 5px;
   display: flex;
@@ -65,23 +82,36 @@
 }
 
 .menu-closed {
+  @include menu;
   visibility: hidden;
+  animation: .5s menuAnimClose ease-out;
 }
 
 .menu-open {
   visibility: initial;
-  position: absolute;
-  right: 0;
-  top: 30px;
-  right: 55px;
-  border: 2px solid darkgrey;
-  box-shadow: 1px 1px black;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 150px;
-  height: 200px;
-  z-index: 2;
+  @include menu;
+  animation: .5s menuAnimOpen ease-in;
+  
+}
+
+@keyframes menuAnimOpen {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: initial;
+  }
+}
+
+@keyframes menuAnimClose {
+  from {
+    opacity: 1;
+    visibility: initial;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
