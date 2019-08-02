@@ -6,10 +6,6 @@ import netlifyIdentity from 'netlify-identity-widget'
 
 window.netlifyIdentity = netlifyIdentity;
 
-netlifyIdentity.init({
-  APIUrl: 'https://nostalgic-wescoff-717fc1.netlify.com/.netlify/identity'
-})
-
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
