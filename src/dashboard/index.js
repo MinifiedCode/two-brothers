@@ -20,7 +20,7 @@ const netlifyAuth = {
 class Dashboard extends Component {
   handleClick = e => {
     netlifyAuth.authenticate(() => {
-      console.log('signed in')
+      netlifyAuth.isAuth = true;
     })
   }
 
@@ -28,7 +28,7 @@ class Dashboard extends Component {
     console.log(netlifyAuth.isAuth)
     return (
       <div className="dashboard">
-        {this.isAuthenticated 
+        {netlifyAuth.isAuth 
           ? <p>You are logged in</p>
           : <Button className="btn-login" text="Login" handleClick={this.handleClick} />
         }
