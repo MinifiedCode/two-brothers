@@ -2,6 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import netlifyIdentity from 'netlify-identity-widget'
+
+window.netlifyIdentity = netlifyIdentity;
+
+netlifyIdentity.init({
+  APIUrl: 'https://nostalgic-wescoff-717fc1.netlify.com/.netlify/identity'
+})
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gotrue-js": "^0.9.25",
     "netlify-identity-widget": "^1.5.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-hamburger-menu": "^1.1.1",
+    "react-netlify-identity": "^0.1.9",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },

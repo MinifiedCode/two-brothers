@@ -5,6 +5,7 @@ import './style.css'
 import Navbar from './navbar'
 import About from './about'
 import Home from './home'
+import Dashboard from './dashboard'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         {/* routing */}
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
+        <Route path="/dashboard" component={Dashboard} />
       </div>
     </Router>
   );

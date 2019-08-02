@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import Button from '../common/Button'
+import NavButton from '../common/NavButton'
 import logo from '../img/gardening-30-512.png'
 import { withRouter } from 'react-router'
 
@@ -39,11 +39,11 @@ class Navbar extends React.Component {
         <img id="logo" alt={"Two Brothers Lawn Care"} src={logo} />
         {/* routes to components */}
         <div className="nav-buttons">
-          <Button active={this.state.activeLink} exact={true} path="/" text="Home" type="nav" />
-          <Button active={this.state.activeLink} path="/about" text="About" type="nav" />
-          <Button active={this.state.activeLink} path="/contact" text="Contact Us" type="nav" />
-          <Button active={this.state.activeLink} path="/dashboard" text="Dashboard" type="nav" />
-          <Button active={this.state.activeLink} path="/quote" text="Get a Quote" type="nav" />
+          <NavButton active={this.state.activeLink} exact={true} path="/" text="Home" type="nav" />
+          <NavButton active={this.state.activeLink} path="/about" text="About" type="nav" />
+          <NavButton active={this.state.activeLink} path="/contact" text="Contact Us" type="nav" />
+          <NavButton active={this.state.activeLink} path="/dashboard" text="Dashboard" type="nav" />
+          <NavButton active={this.state.activeLink} path="/quote" text="Get a Quote" type="nav" />
         </div>
 
         <div className="menu-container">
@@ -63,11 +63,11 @@ class Navbar extends React.Component {
             />
           </div>
           <div className={this.state.mobileMenu}>
-            <Button exact={true} path="/" text="Home" type="nav-mobile" />
-            <Button path="/about" text="About" type="nav-mobile" />
-            <Button path="/contact" text="Contact Us" type="nav-mobile" />
-            <Button path="/dashboard" text="Dashboard" type="nav-mobile" />
-            <Button path="/quote" text="Get a Quote" type="nav-mobile" />
+            <NavButton exact={true} path="/" text="Home" type="nav-mobile" />
+            <NavButton path="/about" text="About" type="nav-mobile" />
+            <NavButton path="/contact" text="Contact Us" type="nav-mobile" />
+            <NavButton path="/dashboard" text="Dashboard" type="nav-mobile" />
+            <NavButton path="/quote" text="Get a Quote" type="nav-mobile" />
           </div>
         </div>
       </div>
