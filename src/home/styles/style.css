@@ -29,9 +29,9 @@
   text-shadow: 2px 1px black;
 }
 
-@media screen and (max-width: 1650px) {
-  .slogan-container {
-    font-size: 22px;
+@media screen and (max-width: 425px) {
+  .slogan-container #welcome {
+    font-size: 5vw;
   }
 }
 

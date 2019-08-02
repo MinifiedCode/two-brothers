@@ -20,7 +20,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="about-container">
-        <h1><i id="underline">What we're about</i></h1>
+        <h1>What we're about</h1>
         <p id="text-content">{text}</p>
         <div id="mower-img"></div>
         <div id="learn-more">

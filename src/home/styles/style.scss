@@ -10,8 +10,6 @@
   position: absolute;
   top: 0;
   text-shadow: 3px 4px grey;
-
-
 }
 
 .slogan-container {
@@ -30,8 +28,10 @@
     text-shadow: 2px 1px black;
   }
 
-  @media screen and (max-width: 1650px) {
-    font-size: 22px;
+  @media screen and (max-width: 425px) {
+    #welcome {
+      font-size: 5vw;
+    }
   }
 
   @media screen and (max-width: 425px) {
