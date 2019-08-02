@@ -12,7 +12,7 @@ export default function Home() {
           <div className="slogan-container">
             <h1 id="welcome">Welcome to Two Brothers Lawn Care</h1>
             <p id="motto">
-              <i>Where family matters</i>
+              <i>"We treat everyone like family"</i>
             </p>
           </div>
         </div>
