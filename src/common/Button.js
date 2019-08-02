@@ -28,7 +28,7 @@ class Button extends Component {
   render() {
     const { path, text, type, exact } = this.props
     return (
-      <NavLink activeClassName={type=="nav-mobile" ? "active-link-mobile" : "active-link"} className={`btn btn-${type}`} exact={exact} to={path}>
+      <NavLink activeClassName={type==="nav-mobile" ? "active-link-mobile" : "active-link"} className={`btn btn-${type}`} exact={exact} to={path}>
         { 
           type === "nav" 
             ? <span className="link"><p>{text}</p></span>
