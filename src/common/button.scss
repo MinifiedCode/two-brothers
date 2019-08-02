@@ -5,9 +5,11 @@
 
   button {
     background: none;
-    border: 2px solid green;
+    border: none;
 
     &:hover {
+      background: darken($bgColor, 40%);
+      color: white;
       cursor: pointer;
     }
   }
@@ -20,10 +22,19 @@
     color: $textColor;
     width: 100px;
     height: 50px;
-    
-    &:hover {
-      background: darken($bgColor, 40%);
-      color: white;
-    }
+  }
+}
+
+.btn-logout {
+  height: 100%;
+  button {
+    height: 100%;
+  }
+}
+
+.btn-invoices {
+  height: 100%;
+  button {
+    height: 100%;
   }
 }

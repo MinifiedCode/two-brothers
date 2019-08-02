@@ -4,10 +4,12 @@
 
 .btn-generic button {
   background: none;
-  border: 2px solid green;
+  border: none;
 }
 
 .btn-generic button:hover {
+  background: #999999;
+  color: white;
   cursor: pointer;
 }
 
@@ -21,8 +23,19 @@
   height: 50px;
 }
 
-.btn-login button:hover {
-  background: #999999;
-  color: white;
+.btn-logout {
+  height: 100%;
+}
+
+.btn-logout button {
+  height: 100%;
+}
+
+.btn-invoices {
+  height: 100%;
+}
+
+.btn-invoices button {
+  height: 100%;
 }
 /*# sourceMappingURL=button.css.map */

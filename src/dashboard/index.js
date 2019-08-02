@@ -19,18 +19,41 @@ const netlifyAuth = {
 
 class Dashboard extends Component {
   handleClick = e => {
+    netlifyIdentity.open('login')
     netlifyAuth.authenticate(() => {
-      console.log('auth')
       netlifyAuth.isAuth = true;
     })
   }
 
+  constructor(props) {
+    super(props)
+
+    this.state = { authenticated: false }
+  }
+
+  componentDidMount() {
+    let user = netlifyIdentity.currentUser()
+    if (user) {
+      this.setState({ authenticated: true, user, userName: user.user_metadata.full_name })
+      if (user.app_metadata.roles[0] == 'developer') {
+        this.setState({ developer: true })
+      }
+    }
+  }
+
   render() {
-    console.log(netlifyAuth.user)
     return (
       <div className="dashboard">
-        {netlifyAuth.isAuth 
-          ? <p>You are logged in</p>
+        {this.state.authenticated
+          ? (
+            <div className="dashboard-navigation">
+              <h1 id="authenticated-user">{this.state.userName}</h1>
+              <div className="right-aligned">
+                <Button className="btn-invoices" text="Invoices" handleClick={this.handleClick} />
+                <Button className="btn-logout" text="Logout" handleClick={this.handleClick} />
+              </div>
+            </div>
+          )
           : <Button className="btn-login" text="Login" handleClick={this.handleClick} />
         }
       </div>
