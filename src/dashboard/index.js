@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import './dashboard.css'
 import Button from '../common/Button'
-
+import { withRouter } from 'react-router-dom'
 import netlifyIdentity from 'netlify-identity-widget'
 
 const netlifyAuth = {
   isAuth: false,
   user: null,
   authenticate(callback) {
-    this.isAuthenticated = true
+    this.isAuth = true
     netlifyIdentity.open()
     netlifyIdentity.on('login', user => {
       this.user = user;
@@ -17,7 +17,7 @@ const netlifyAuth = {
   }
 }
 
-export default class Dashboard extends Component {
+class Dashboard extends Component {
   handleClick = e => {
     netlifyAuth.authenticate(() => {
       console.log('signed in')
@@ -25,10 +25,16 @@ export default class Dashboard extends Component {
   }
 
   render() {
+    console.log(netlifyAuth.isAuth)
     return (
       <div className="dashboard">
-        <Button className="btn-login" text="Login" handleClick={this.handleClick} />
+        {this.isAuthenticated 
+          ? <p>You are logged in</p>
+          : <Button className="btn-login" text="Login" handleClick={this.handleClick} />
+        }
       </div>
     )
   }
 }
+
+export default withRouter(Dashboard)
