@@ -13,9 +13,9 @@ export default class Footer extends Component {
         <div className="footer-container">
           <h1>{this.props.company}</h1>
           <div id="social-media">
-            <i onClick={this.handleClick} id="github-icon" class="fa fa-github fa-2x" aria-hidden="true"></i>
-            <i id="facebook-icon" class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-            <i id="twitter-icon" class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            <i onClick={this.handleClick} id="github-icon" className="fa fa-github fa-2x" aria-hidden="true"></i>
+            <i id="facebook-icon" className="fa fa-facebook fa-2x" aria-hidden="true"></i>
+            <i id="twitter-icon" className="fa fa-twitter fa-2x" aria-hidden="true"></i>
           </div>
         </div>
       </div>

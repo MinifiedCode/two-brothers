@@ -35,7 +35,7 @@ class Dashboard extends Component {
     let user = netlifyIdentity.currentUser()
     if (user) {
       this.setState({ authenticated: true, user, userName: user.user_metadata.full_name })
-      if (user.app_metadata.roles[0] == 'developer') {
+      if (user.app_metadata.roles[0] === 'developer') {
         this.setState({ developer: true })
       }
     }

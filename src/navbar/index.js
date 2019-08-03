@@ -1,7 +1,6 @@
 import React from 'react'
 import './style.css'
 import NavButton from '../common/NavButton'
-import logo from '../img/gardening-30-512.png'
 import { withRouter } from 'react-router'
 
 import HamburgerMenu from 'react-hamburger-menu'

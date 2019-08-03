@@ -11,10 +11,6 @@ class NavButton extends Component {
     this.state = {activeLink: '/'}
   }
 
-  componentDidMount() {
-    if (this.props.active === this.props.path) console.log('match')
-  }
-
   componentDidUpdate(prevProps) {
     if (prevProps.active !== this.props.active)
       this.setState({ activeLink: this.props.active })
