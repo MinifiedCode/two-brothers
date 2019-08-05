@@ -3,6 +3,7 @@ import "./styles/style.css";
 import background from "../img/background-2.jpeg";
 import About from './about'
 import Separator from '../common/Separator'
+import LawnImages from './lawnImages'
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
       </div>
 
       <About />
-
       <Separator />
+
+      <LawnImages />
     </div>
   );
 }

@@ -1,12 +1,12 @@
 .separator {
   z-index: 1;
-  height: 200px;
+  height: 15vh;
   border-bottom: 2px solid grey;
+  box-shadow: 0 4px 2px -2px gray;
 
   .line {
     height: 40px;
-    border-bottom: 2px solid grey;
-    box-shadow: 0 4px 2px -2px gray;
+  
     width: 90%;
     margin: auto;
   }
