@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import { NavLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import './nav-button.css'
+import './styles/nav-button.css'
 
 class NavButton extends Component {
   constructor(props) {

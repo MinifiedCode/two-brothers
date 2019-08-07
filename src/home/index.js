@@ -1,8 +1,8 @@
-import React from "react";
-import "./styles/style.css";
+import React from "react"
+import "./styles/style.css"
+import "../common/styles/separator.css"
 import Welcome from './welcome'
 import About from './about'
-import Separator from '../common/Separator'
 import LawnImages from './lawnImages'
 import Features from './features'
 
@@ -11,8 +11,10 @@ export default function Home() {
     <div className="home-container">
       <Welcome />
       <About />
-      <Separator />
+      <div className="separator"></div>
       <LawnImages />
+      <div className="separator"></div>
+      <Features />
     </div>
   );
 }
