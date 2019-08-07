@@ -69,6 +69,10 @@
   background: #999999;
 }
 
+.images-container .active-true {
+  background: red;
+}
+
 .images-container #container-left {
   width: 10%;
   height: 100%;

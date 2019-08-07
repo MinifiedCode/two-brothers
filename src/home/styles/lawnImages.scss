@@ -102,6 +102,10 @@
     }
   }
 
+  .active-true {
+    background: red
+  }
+
   #container-left {
     @include arrowContainer;
     position: absolute;

@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAClB,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,IAAI;CACb",
+    "mappings": "AAEA,AAAA,mBAAmB,CAAC;EAClB,OAAO,EAAE,SAAS;EAClB,MAAM,EAAE,IAAI;EACZ,KAAK,ECAQ,GAAG;EDChB,MAAM,EAAE,IAAI;CACb",
     "sources": [
-        "features.scss"
+        "features.scss",
+        "../../_variables.scss"
     ],
     "names": [],
     "file": "features.css"

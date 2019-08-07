@@ -57,10 +57,10 @@ export default class lawnImages extends Component {
     return (
       <div className="images-container">
         <div className="images">
-          <img alt="Lawns that we mow!" className="image" style={{visibility: images[0].visibility}} src={images[0].src}></img>
-          <img alt="Lawns that we mow!" className="image" style={{visibility: images[1].visibility}} src={images[1].src}></img>
-          <img alt="Lawns that we mow!" className="image" style={{visibility: images[2].visibility}} src={images[2].src}></img>
-          <img alt="Lawns that we mow!" className="image" style={{visibility: images[3].visibility}} src={images[3].src}></img>
+          <img alt="Lawns that we mow!" className={`image`} style={{visibility: images[0].visibility}} src={images[0].src}></img>
+          <img alt="Lawns that we mow!" className={`image`} style={{visibility: images[1].visibility}} src={images[1].src}></img>
+          <img alt="Lawns that we mow!" className={`image`} style={{visibility: images[2].visibility}} src={images[2].src}></img>
+          <img alt="Lawns that we mow!" className={`image`} style={{visibility: images[3].visibility}} src={images[3].src}></img>
         </div>
 
         <div id="container-left">
@@ -80,7 +80,7 @@ export default class lawnImages extends Component {
           <ul id="image-bulleted-navigation">
             {this.state.images.map(image => {
               return (
-                <li className="image-bullet"></li>
+                <li className={`image-bullet active-${image.active}`}></li>
               )
             })}
           </ul>

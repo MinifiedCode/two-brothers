@@ -5,6 +5,7 @@ import Welcome from './welcome'
 import About from './about'
 import LawnImages from './lawnImages'
 import Features from './features'
+import Testimonies from './testimonies'
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
       <LawnImages />
       <div className="separator"></div>
       <Features />
+      <div className="separator"></div>
+      <Testimonies />
     </div>
   );
 }
