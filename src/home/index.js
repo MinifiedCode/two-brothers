@@ -13,9 +13,9 @@ export default function Home() {
       <Welcome />
       <About />
       <div className="separator"></div>
-      <LawnImages />
-      <div className="separator"></div>
       <Features />
+      <div className="separator"></div>
+      <LawnImages />
       <div className="separator"></div>
       <Testimonies />
     </div>
