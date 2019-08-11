@@ -63,6 +63,7 @@
   color: transparent;
   border: 1px solid lightgrey;
   border-radius: 20px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .images-container #image-bulleted-navigation .image-bullet:hover {
@@ -120,6 +121,7 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-tap-highlight-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,6 +159,7 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-tap-highlight-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

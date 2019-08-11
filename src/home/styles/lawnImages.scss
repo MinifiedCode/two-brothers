@@ -21,6 +21,9 @@
       color: black;
     }
   }
+
+  -webkit-tap-highlight-color: transparent;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,6 +104,7 @@ $activeColor: darken($bgColor, 40%);
       color: transparent;
       border: 1px solid lightgrey;
       border-radius: 20px;
+      -webkit-tap-highlight-color: transparent;
 
       &:hover {
         cursor: pointer;
@@ -164,4 +168,3 @@ $activeColor: darken($bgColor, 40%);
     opacity: 1;
   }
 }
- 
