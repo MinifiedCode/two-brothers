@@ -9,18 +9,30 @@
   text-align: center;
 }
 
+@media screen and (max-width: 425px) {
+  .testimonies-container {
+    height: 100vh;
+  }
+}
+
 .reviews {
   height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+@media screen and (max-width: 425px) {
+  .reviews {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .review-card {

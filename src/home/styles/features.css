@@ -7,6 +7,12 @@
   border-radius: 30px;
 }
 
+@media screen and (max-width: 425px) {
+  .features-container {
+    height: 80vh;
+  }
+}
+
 .features-container .features-list {
   height: 100%;
   display: -ms-grid;
@@ -19,6 +25,13 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+@media screen and (max-width: 425px) {
+  .features-container .features-list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .features-container .features-list .card {

@@ -71,6 +71,8 @@
 @media screen and (max-width: 425px) {
   #bg {
     height: 300px;
+    -o-object-position: 65%;
+       object-position: 65%;
   }
 }
 /*# sourceMappingURL=style.css.map */

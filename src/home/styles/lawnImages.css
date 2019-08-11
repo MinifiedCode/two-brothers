@@ -211,6 +211,13 @@
   visibility: hidden;
 }
 
+@media screen and (max-width: 425px) {
+  .images-container .images .image {
+    -o-object-position: 100%;
+       object-position: 100%;
+  }
+}
+
 .images-container .images .image-active {
   visibility: visible;
 }

@@ -9,13 +9,21 @@
   position: relative;
   border-radius: 30px;
   text-align: center;
+
+  @media screen and (max-width: 425px) {
+    height: 100vh;
+  }
 }
 
 .reviews {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+
+  @media screen and (max-width: 425px) {
+    grid-template-columns: 1fr;
+  }
+
   justify-content: center;
   align-content: center;
 }

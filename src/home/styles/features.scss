@@ -8,6 +8,10 @@
   position: relative;
   border-radius: 30px;
 
+  @media screen and (max-width: 425px) {
+    height: 80vh;
+  }
+
   .features-list {
     height: 100%;
     display: grid;
@@ -15,6 +19,10 @@
     grid-gap: 20px;
     justify-content: center;
     align-content: center;
+
+    @media screen and (max-width: 425px) {
+      grid-template-columns: 1fr;
+    }
 
     .card {
       position: relative;
