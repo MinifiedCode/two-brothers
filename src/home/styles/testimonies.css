@@ -2,6 +2,68 @@
   padding: 40px 20px;
   height: 50vh;
   width: 76%;
-  margin: auto;
+  color: black;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.reviews {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.review-card {
+  font-size: 14px;
+  height: 12vh;
+  border: 2px solid green;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.review-card:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px darkgrey;
+          box-shadow: 2px 2px 5px 2px darkgrey;
+  cursor: default;
+}
+
+#reviewer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#stars {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.checked {
+  color: gold;
 }
 /*# sourceMappingURL=testimonies.css.map */

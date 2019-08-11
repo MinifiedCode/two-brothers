@@ -66,11 +66,12 @@
 }
 
 .images-container #image-bulleted-navigation .image-bullet:hover {
+  cursor: pointer;
   background: #999999;
 }
 
 .images-container .active-true {
-  background: red;
+  background: #999999;
 }
 
 .images-container #container-left {
@@ -208,6 +209,10 @@
   -o-object-position: 110% 80%;
      object-position: 110% 80%;
   visibility: hidden;
+}
+
+.images-container .images .image-active {
+  visibility: visible;
 }
 
 @-webkit-keyframes lawnTransition {

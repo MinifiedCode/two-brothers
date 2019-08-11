@@ -43,6 +43,8 @@
   object-position: 110% 80%;
 }
 
+$activeColor: darken($bgColor, 40%);
+
 .images-container {
   margin: 40px auto;
   z-index: 1;
@@ -97,13 +99,14 @@
       border-radius: 20px;
 
       &:hover {
-        background: darken($bgColor, 40%);
+        cursor: pointer;
+        background: $activeColor;
       }
     }
   }
 
   .active-true {
-    background: red
+    background: $activeColor;
   }
 
   #container-left {
@@ -140,7 +143,10 @@
     .image {
       @include defineImage; 
       visibility: hidden;
+    }
 
+    .image-active {
+      visibility: visible;
     }
   }
 }

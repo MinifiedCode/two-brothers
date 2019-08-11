@@ -4,5 +4,50 @@
   padding: 40px 20px;
   height: 50vh;
   width: $contentWidth;
-  margin: auto;
+  color: black;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.reviews {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+.review-card {
+  font-size: 14px;
+  height: 12vh;
+  border: 2px solid green;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 20px;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 2px 2px 5px 2px darkgrey;
+    cursor: default;
+  }
+}
+
+#reviewer {
+  display: flex;
+  justify-content: center;
+}
+
+#stars {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.checked {
+  color: gold;
 }

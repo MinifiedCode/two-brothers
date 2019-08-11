@@ -9,23 +9,21 @@ export default class lawnImages extends Component {
     super(props)
     this.state = { 
       images: [
-        {id: 0, src: imageOne, active: false, visibility: 'hidden'},
-        {id: 1, src: imageTwo, active: true, visibility: 'visible'},
-        {id: 2, src: imageThree, active: false, visibility: 'hidden'},
-        {id: 3, src: imageOne, active: false, visibility: 'hidden'},
+        {id: 0, src: imageOne, active: false, visibility: 'hidden', activeStyle: 'inactive'},
+        {id: 1, src: imageTwo, active: true, visibility: 'visible', activeStyle: 'active'},
+        {id: 2, src: imageThree, active: false, visibility: 'hidden', activeStyle: 'inactive'},
+        {id: 3, src: imageOne, active: false, visibility: 'hidden', activeStyle: 'inactive'},
       ] 
     }
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    console.log(this.state)
   }
 
   getActiveImage = (image, nextImage) => {
     image.active = false
     image.visibility = 'hidden'
+    image.activeStyle = 'inactive'
     nextImage.active = true
     nextImage.visibility = 'visible'
+    nextImage.activeStyle = 'active'
     return true
   }
 
@@ -52,15 +50,47 @@ export default class lawnImages extends Component {
     })
   }
 
+  handleBulletClick = e => {
+    e.preventDefault()
+    let images = this.state.images
+    let id = e.target.id
+    for (let i = 0; i < images.length; i++) 
+      if (i !== id) {
+        images[i].active = false
+        images[i].visibility = 'hidden'
+        images[i].activeStyle = 'inactive'
+      }
+
+    images[id] = {
+      ...this.state.images[id],
+      active: true,
+      visibility: 'visible',
+      activeStyle: 'active'
+    }
+
+    this.setState({
+      images
+    })
+  }
+
   render() {
     let {images} = this.state
     return (
       <div className="images-container">
         <div className="images">
-          <img alt="Lawns that we mow!" className={`image`} style={{visibility: images[0].visibility}} src={images[0].src}></img>
-          <img alt="Lawns that we mow!" className={`image`} style={{visibility: images[1].visibility}} src={images[1].src}></img>
-          <img alt="Lawns that we mow!" className={`image`} style={{visibility: images[2].visibility}} src={images[2].src}></img>
-          <img alt="Lawns that we mow!" className={`image`} style={{visibility: images[3].visibility}} src={images[3].src}></img>
+          {
+            images.map(image => {
+              let active = image.activeStyle
+              return (
+                <img 
+                  key={image.id}
+                  alt="Lawns that we mow!" 
+                  className={`image image-${active}`} 
+                  src={image.src}
+                />
+              )
+            })
+          }
         </div>
 
         <div id="container-left">
@@ -80,7 +110,7 @@ export default class lawnImages extends Component {
           <ul id="image-bulleted-navigation">
             {this.state.images.map(image => {
               return (
-                <li className={`image-bullet active-${image.active}`}></li>
+                <li key={image.id} id={image.id} className={`image-bullet active-${image.active}`} onClick={this.handleBulletClick}></li>
               )
             })}
           </ul>
