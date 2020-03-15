@@ -4,7 +4,7 @@ import "../common/styles/separator.css"
 import Welcome from './welcome'
 import About from './about'
 import LawnImages from './lawnImages'
-import Features from './features'
+import Services from './services'
 import Testimonies from './testimonies'
 
 export default function Home() {
@@ -13,11 +13,11 @@ export default function Home() {
       <Welcome />
       <About />
       <div className="separator"></div>
-      <Features />
+      <Services />
       <div className="separator"></div>
       <LawnImages />
-      <div className="separator"></div>
-      <Testimonies />
+      {/* <div className="separator"></div>
+      <Testimonies /> */}
     </div>
   );
 }

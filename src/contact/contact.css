@@ -1,0 +1,90 @@
+.contactContainer {
+  width: 50%;
+  margin: 20px auto;
+  height: 50vh;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.formContainer {
+  width: 100%;
+  height: 100%;
+  background: #3d3b3b;
+  margin: auto;
+  position: absolute;
+}
+
+.buttonContainer {
+  margin: 10px;
+}
+
+.buttonContainer button {
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.nameContainer {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.nameContainer label {
+  position: absolute;
+  left: 4%;
+}
+
+.emailContainer {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.emailContainer label {
+  position: absolute;
+  left: 4%;
+}
+
+.messageContainer {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.messageContainer label {
+  position: absolute;
+  left: 4%;
+}
+
+.nameInput {
+  width: 80%;
+  height: 20px;
+  margin: 2%;
+  padding: 1%;
+  text-align: center;
+  border: 2px solid rgba(172, 171, 171, 0.795);
+  border-radius: 3px;
+}
+
+.emailInput {
+  width: 80%;
+  height: 20px;
+  margin: 2%;
+  padding: 1%;
+  text-align: center;
+  border: 2px solid rgba(172, 171, 171, 0.795);
+  border-radius: 3px;
+}
+
+.messageInput {
+  width: 80%;
+  height: 100px;
+  margin: 2%;
+  padding: 1%;
+  text-align: center;
+  border: 2px solid rgba(172, 171, 171, 0.795);
+  border-radius: 3px;
+}
+/*# sourceMappingURL=contact.css.map */

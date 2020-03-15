@@ -5,8 +5,10 @@ import './style.css'
 import Navbar from './navbar'
 import About from './about'
 import Home from './home'
-import Dashboard from './dashboard'
+// import Dashboard from './dashboard'
+import Contact from './contact'
 import Footer from './footer'
+import Quote from './quote'
 
 function App() {
   return (
@@ -15,8 +17,10 @@ function App() {
         <Navbar />
         {/* routing */}
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/dashboard" component={Dashboard} />
+        {/* <Route path="/about" component={About} /> */}
+        <Route path="/contact" component={Contact} />
+        {/* <Route path="/dashboard" component={Dashboard} /> */}
+        <Route path="/quote" component={Quote} />
         
         <Footer company="Two Brothers Lawn Care" />
       </div>

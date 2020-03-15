@@ -11,15 +11,16 @@ export default class Testimonies extends Component {
         { id: 0, userId: 0, user: 'Billy', stars: 3, review: 'Users may enter their own review content through a REST API'},
         { id: 1, userId: 1, user: 'Andrew', stars: 4, review: 'Users may enter their own review content through a REST API'},
         { id: 2, userId: 2, user: 'John', stars: 5, review: 'Users may enter their own review content through a REST API'},
-        { id: 3, userId: 3, user: 'Jill', stars: 1, review: 'Users may enter their own review content through a REST API'}
+        { id: 3, userId: 3, user: '', stars: 0, review: ''},
+        { id: 4, userId: 4, user: 'Jill', stars: 1, review: 'Users may enter their own review content through a REST API'}
       ]
     }
   }
 
   getStars = stars => {
     return this.state.stars.map(star => {
-      if (star <= stars) return <i className="fa fa-star checked"></i>
-      else return <i className= "fa fa-star"></i>
+      if (star <= stars) return <i key={star} className="fa fa-star checked"></i>
+      else return <i key={star} className= "fa fa-star"></i>
     })
   }
 

@@ -39,10 +39,10 @@ class Navbar extends React.Component {
         {/* routes to components */}
         <div className="nav-buttons">
           <NavButton active={this.state.activeLink} exact={true} path="/" text="Home" type="nav" />
-          <NavButton active={this.state.activeLink} path="/about" text="About" type="nav" />
+          {/* <NavButton active={this.state.activeLink} path="/about" text="About" type="nav" /> */}
           <NavButton active={this.state.activeLink} path="/contact" text="Contact Us" type="nav" />
-          <NavButton active={this.state.activeLink} path="/dashboard" text="Dashboard" type="nav" />
-          <NavButton active={this.state.activeLink} path="/quote" text="Get a Quote" type="nav" />
+          {/* <NavButton active={this.state.activeLink} path="/dashboard" text="Dashboard" type="nav" /> */}
+          {/* <NavButton active={this.state.activeLink} path="/quote" text="Get a Quote" type="nav" /> */}
         </div>
 
         <div className="menu-container">
@@ -63,9 +63,9 @@ class Navbar extends React.Component {
           </div>
           <div className={this.state.mobileMenu}>
             <NavButton exact={true} path="/" text="Home" type="nav-mobile" />
-            <NavButton path="/about" text="About" type="nav-mobile" />
+            {/* <NavButton path="/about" text="About" type="nav-mobile" /> */}
             <NavButton path="/contact" text="Contact Us" type="nav-mobile" />
-            <NavButton path="/dashboard" text="Dashboard" type="nav-mobile" />
+            {/* <NavButton path="/dashboard" text="Dashboard" type="nav-mobile" /> */}
             <NavButton path="/quote" text="Get a Quote" type="nav-mobile" />
           </div>
         </div>

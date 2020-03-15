@@ -11,7 +11,11 @@
   line-height: 40px;
 }
 
-.about-container #text {
+.about-container h1 {
+  margin-bottom: 2%;
+}
+
+.about-container .text-content {
   margin-left: 20px;
   z-index: 2;
 }

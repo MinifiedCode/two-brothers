@@ -3,7 +3,8 @@ import './styles/about.css'
 import NavButton from '../common/NavButton'
 
 let text = `
-  rem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis neque, pretium eget augue at, egestas rhoncus augue. Nunc vehicula vel purus viverra tempor. Curabitur rutrum finibus accumsan. Nunc dignissim tincidunt nisl at consequat. Fusce eu porttitor enim. Vestibulum nec ligula nec elit maximus hendrerit. Donec viverra dui ut pharetra pretium. Fusce sollicitudin id lectus pharetra aliquam. Ut gravida ligula eu nisi posuere, vel faucibus metus gravida. Cras euismod mollis ipsum, vitae tristique nibh viverra sed.
+Two Brothers Lawn Care is a local, family owned business started by brothers Mike and Chris Hurtt. 
+With 12 years of dedication to the Wichita community, Two Brothers aims to treat you as if you're apart of the family and to care for your lawn as if it were their own. 
 `
 
 /*
@@ -20,12 +21,14 @@ export default class About extends Component {
   render() {
     return (
       <div className="about-container">
-        <h1>What we're about</h1>
-        <p id="text-content">{text}</p>
+        <h1>What We're About</h1>
+        <p className="text-content">{text}</p>
+        <br />
+        <p className="text-content">Contact us today for more information</p>
         <div id="mower-img"></div>
-        <div id="learn-more">
+        {/* <div id="learn-more">
           <NavButton path="/about" exact={false} type="info"  text="Learn More" />
-        </div>
+        </div> */}
       </div>
     )
   }

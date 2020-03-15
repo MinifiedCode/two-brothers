@@ -10,6 +10,9 @@
 }
 
 .images-container #image-descriptor {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   width: 100%;
   position: absolute;
   bottom: 50px;
@@ -36,15 +39,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
   width: 20%;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -54,8 +57,8 @@
 }
 
 .images-container #image-bulleted-navigation .image-bullet {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   list-style-position: inside;
   position: relative;
   top: 20px;
@@ -63,6 +66,7 @@
   color: transparent;
   border: 1px solid lightgrey;
   border-radius: 20px;
+  margin: 0 2px;
   -webkit-tap-highlight-color: transparent;
 }
 
