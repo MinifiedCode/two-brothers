@@ -7,9 +7,9 @@ export default class services extends Component {
 
     this.state = {
       services: [
-        {id: 1, title: 'Lawn Care', description: 'We care for your lawn'},
-        {id: 2,title: 'Lawn Mowing', description: 'We care for your lawn'},
-        {id: 3,title: 'More Lawn Stuff', description: 'We care for your lawn'}
+        {id: 1, title: 'Lawn Mowing', features: ['Trimming perimeters', 'Precision edging'], description: 'We care for your lawn'},
+        {id: 2, title: 'Lawn Care', features: ['Fertilizing', 'Overseeding'], description: 'We care for your lawn'},
+        {id: 3, title: 'Other Services', features: ['Leaf removal', 'Rain gutter cleaning'], description: 'We care for your lawn'}
       ]
     }
   }
@@ -25,8 +25,13 @@ export default class services extends Component {
                 <div className="card" key={service.id}>
                   <p className="card-header">{service.title}</p>
                   <p className="card-separator" />
-                  <p className="card-details">{service.description}</p>
-                  <div className="card-button"><p>Learn More</p></div>
+                  <div className="card-details">
+                    {
+                      service.features.map((feature, index) => (
+                        <p key={index} className="feature">• {feature}</p>
+                      ))
+                    }
+                  </div>
                 </div>
               )
             })

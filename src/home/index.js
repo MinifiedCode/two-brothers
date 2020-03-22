@@ -15,7 +15,11 @@ export default function Home() {
       <div className="separator"></div>
       <Services />
       <div className="separator"></div>
-      <LawnImages />
+      {/* <LawnImages /> */}
+      <div className="service-area">
+        <h1>Where We Work</h1>
+        <p>We service Greater Wichita, Maize, Park City, and Bel Aire.</p>
+      </div>
       {/* <div className="separator"></div>
       <Testimonies /> */}
     </div>

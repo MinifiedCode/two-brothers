@@ -3,8 +3,9 @@ import './styles/about.css'
 import NavButton from '../common/NavButton'
 
 let text = `
-Two Brothers Lawn Care is a local, family owned business started by brothers Mike and Chris Hurtt. 
-With 12 years of dedication to the Wichita community, Two Brothers aims to treat you as if you're apart of the family and to care for your lawn as if it were their own. 
+Two Brothers Lawn Care is a family owned and operated business with deep roots in the community.  We started 12 years ago with two mowers and a dedication to customer service.  
+
+Our goal is to treat you like part of the family and to care for your lawn like it was our own. Our mission is simple: To always offer excellent service at a fair price.
 `
 
 /*
