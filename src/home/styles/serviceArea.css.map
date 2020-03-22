@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACV,OAAO,ECGM,IAAI,CAAC,IAAI;EDFtB,KAAK,ECCM,GAAG;EDAd,MAAM,EAAE,SAAS;CACpB",
+    "sources": [
+        "serviceArea.scss",
+        "../../_variables.scss"
+    ],
+    "names": [],
+    "file": "serviceArea.css"
+}

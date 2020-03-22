@@ -1,6 +1,7 @@
 import React from "react"
 import "./styles/style.css"
 import "../common/styles/separator.css"
+import "./styles/serviceArea.css"
 import Welcome from './welcome'
 import About from './about'
 import LawnImages from './lawnImages'
