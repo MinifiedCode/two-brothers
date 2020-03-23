@@ -22,6 +22,7 @@ export default class Contact extends Component {
   render() {
     return (
       <div className="contactContainer">
+        <p id="testCharges">Our charges are based on the size of your yard and complexity of your needs.  Call or e-mail us for a free, friendly and fair estimate.</p>
         <form className="formContainer">
           <h1>Request a Quote</h1>
           <div className="nameContainer">

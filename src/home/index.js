@@ -7,6 +7,7 @@ import About from './about'
 import LawnImages from './lawnImages'
 import Services from './services'
 import Testimonies from './testimonies'
+import Contact from '../contact'
 
 export default function Home() {
   return (
@@ -17,8 +18,9 @@ export default function Home() {
       <Services />
       {/* <div className="separator"></div> */}
       {/* <LawnImages /> */}
-      {/* <div className="separator"></div>
-      <Testimonies /> */}
+      <div className="separator"></div>
+      <Contact />
+      {/*<Testimonies /> */}
     </div>
   );
 }

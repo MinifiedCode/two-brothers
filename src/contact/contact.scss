@@ -45,6 +45,11 @@
   }
 }
 
+#testCharges {
+  color: black;
+  margin: 3%;
+}
+
 .nameContainer {
   @include inputContainers();
 }

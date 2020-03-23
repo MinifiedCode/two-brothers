@@ -25,6 +25,11 @@
   border-radius: 5px;
 }
 
+#testCharges {
+  color: black;
+  margin: 3%;
+}
+
 .nameContainer {
   width: 90%;
   margin: auto;
