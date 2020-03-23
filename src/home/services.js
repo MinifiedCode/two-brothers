@@ -37,6 +37,7 @@ export default class services extends Component {
             })
           }
         </div>
+        <p id="serviceArea">We service Greater Wichita, Maize, Park City, and Bel Aire.</p>
       </div>
     )
   }
