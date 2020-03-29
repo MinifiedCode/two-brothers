@@ -74,6 +74,10 @@
   margin: 3%;
 }
 
+#messageSent {
+  padding: 10px;
+}
+
 .nameContainer {
   @include inputContainers();
 }

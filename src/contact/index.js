@@ -105,7 +105,7 @@ export default class Contact extends Component {
             <button id="clear" onClick={this.clearFields}>Clear</button>
           </div>
 
-          {this.state.messageSent}
+          <p id="messageSent">{this.state.messageSent}</p>
         </form>
       </div>
     )
