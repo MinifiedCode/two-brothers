@@ -13,9 +13,39 @@ export default class Contact extends Component {
   }
 
   onChange = e => {
-    console.log(e.target.name)
+    let propertyName = e.target.name
+    let value = e.target.value
+    let currentState = this.state
+    currentState[propertyName] = value
+    this.setState(currentState)
+  }
+
+  handleClick = e => {
+    e.preventDefault()
+    let fullName = this.state.fullName
+    let email = this.state.email
+    let message = this.state.message
+
+    console.log(this.validateInput(fullName, email, message))
+    console.log(this.state)
+  }
+
+  validateInput = (fullName, email, message) => {
+    // Do all fields have a value?
+    if (!fullName || !email || !message) return false
+    
+    // Is the email valid?
+    if (!email.includes('@')) return false
+
+    return true
+  }
+
+  clearFields = e => {
+    e.preventDefault()
     this.setState({
-      fullName: e.target.value
+      fullName: '',
+      email: '',
+      message: ''
     })
   }
   
@@ -26,25 +56,26 @@ export default class Contact extends Component {
         <form className="formContainer">
           <h1>Request a Quote</h1>
           <div className="nameContainer">
-            <label><strong>Name (required): </strong></label>
+            <label>Name <b>*</b></label>
             <br />
             <input className="nameInput" name="fullName" type="text" value={this.state.fullName} onChange={this.onChange} placeholder={'Full name'} />
           </div>
   
           <div className="emailContainer">
-            <label><strong>Email (required): </strong></label>
+            <label>Email <b>*</b></label>
             <br />
-            <input className="emailInput" name="email" text="text" placeholder={'your@email.com'} value={this.state.email} />
+            <input className="emailInput" name="email" text="text" placeholder={'your@email.com'} onChange={this.onChange}  value={this.state.email} />
           </div>
   
           <div className="messageContainer">
-            <label><strong>Message (required): </strong></label>
+            <label>Message <b>*</b></label>
             <br />
-            <input className="messageInput" name="message" text="text" placeholder={'Message'} value={this.state.message} />
+            <input className="messageInput" name="message" text="text" placeholder={'Message'} onChange={this.onChange}  value={this.state.message} />
           </div>
 
           <div className="buttonContainer">
-            <button type="submit">Submit</button>
+            <button id="submit" onClick={this.handleClick} type="submit">Submit</button>
+            <button id="clear" onClick={this.clearFields}>Clear</button>
           </div>
         </form>
       </div>

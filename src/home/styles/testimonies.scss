@@ -19,6 +19,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
 
   @media screen and (max-width: 425px) {
     grid-template-columns: 1fr;
@@ -43,7 +44,7 @@
   }
 }
 
-#reviewer {
+.reviewer {
   display: flex;
   justify-content: center;
 }
@@ -54,6 +55,10 @@
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom: 10px;
+}
+
+.description {
+  padding: 25px;
 }
 
 .checked {

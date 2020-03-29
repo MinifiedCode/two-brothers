@@ -1,28 +1,55 @@
 .contactContainer {
   width: 50%;
   margin: 20px auto;
-  height: 50vh;
+  height: 50%;
   position: relative;
   text-align: center;
-  color: white;
+  padding: 30px;
+  color: black;
 }
 
 .formContainer {
   width: 100%;
   height: 100%;
-  background: #3d3b3b;
+  background: white;
   margin: auto;
-  position: absolute;
+  border: 2px solid grey;
+  border-radius: 5px;
 }
 
 .buttonContainer {
   margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .buttonContainer button {
-  width: 100px;
-  height: 25px;
+  width: 180px;
+  height: 50px;
+  margin: 10px;
   border-radius: 5px;
+  color: white;
+  border: 2px solid black;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.buttonContainer button:hover {
+  text-shadow: 1px 2px black;
+  cursor: pointer;
+}
+
+.buttonContainer #submit {
+  background: #148114;
+  width: 250px;
+}
+
+.buttonContainer #clear {
+  background: #b63b3b;
 }
 
 #testCharges {
@@ -91,5 +118,9 @@
   text-align: center;
   border: 2px solid rgba(172, 171, 171, 0.795);
   border-radius: 3px;
+}
+
+b {
+  color: red;
 }
 /*# sourceMappingURL=contact.css.map */

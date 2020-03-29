@@ -20,7 +20,8 @@ export default function Home() {
       {/* <LawnImages /> */}
       <div className="separator"></div>
       <Contact />
-      {/*<Testimonies /> */}
+      <div className="separator"></div>
+      <Testimonies />
     </div>
   );
 }

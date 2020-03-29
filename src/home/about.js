@@ -25,7 +25,7 @@ export default class About extends Component {
         <h1>What We're About</h1>
         <p className="text-content">{text}</p>
         <br />
-        <p className="text-content">Contact us today for more information</p>
+        <p className="text-content">Contact us today for more information. 316-650-4981</p>
         <div id="mower-img"></div>
         {/* <div id="learn-more">
           <NavButton path="/about" exact={false} type="info"  text="Learn More" />
